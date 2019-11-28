@@ -66,6 +66,7 @@ What type of information it collect:
 │   ├── webpack.common.js
 │   ├── webpack.prod.js
 │   └── webpack.dev.js
+├── .eslintrc
 ├── babel.config.js
 ├── package-lock.json
 └── package.json
@@ -89,7 +90,14 @@ For build project:
 ```sh
 $ npm run build
 ```
-
+For lint project:
+```sh
+$ npm run lint
+```
+For fix errors which lint found in project:
+```sh
+$ npm run fix
+```
 ## Usage
 User can:
 - Add new ship
@@ -99,6 +107,7 @@ User can:
 ## Technologies
  - [Babel](https://babeljs.io/) - toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers
  - [Webpack](https://webpack.js.org/) - tool for bundle scritps
+ - [Eslint](https://eslint.org/) - tool for identifying and reporting on patterns found in ECMAScript/JavaScript code
 
 ## Scripts description
 * `./src/index.html` - main html file;
@@ -115,6 +124,7 @@ User can:
 * `./webpack/webpack.common.js` - file for common webpack configuration;
 * `./webpack/webpack.dev.js` - file for development webpack configuration;
 * `./webpack/webpack.prod.js` - file for production webpack configuration;
+* `.eslintrc` - file for lint configuration;
 * `babel.config.js` - file for babel configuration;
 * `package-lock.json` - automatically generated for any operations where npm modifies either the node_modules tree, or package.json;
 * `package.json` - file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies.
