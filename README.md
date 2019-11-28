@@ -67,6 +67,7 @@ What type of information it collect:
 │   ├── webpack.prod.js
 │   └── webpack.dev.js
 ├── babel.config.js
+├── .travis.yml
 ├── package-lock.json
 └── package.json
 ```
@@ -99,7 +100,7 @@ User can:
 ## Technologies
  - [Babel](https://babeljs.io/) - toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers
  - [Webpack](https://webpack.js.org/) - tool for bundle scritps
-
+ - [Travis](https://docs.travis-ci.com/user/customizing-the-build/) - tool for CI
 ## Scripts description
 * `./src/index.html` - main html file;
 * `./src/css/main.css` - main css file with stylesheets;
@@ -116,6 +117,7 @@ User can:
 * `./webpack/webpack.dev.js` - file for development webpack configuration;
 * `./webpack/webpack.prod.js` - file for production webpack configuration;
 * `babel.config.js` - file for babel configuration;
+* `.travis.yml` - file for CI configuration;
 * `package-lock.json` - automatically generated for any operations where npm modifies either the node_modules tree, or package.json;
 * `package.json` - file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies.
 
