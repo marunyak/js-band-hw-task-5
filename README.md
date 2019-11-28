@@ -49,11 +49,13 @@ What type of information it collect:
 │   │   │    ├── Catalog/
 │   │   │    │   └── Catalog.js
 │   │   │    ├── CostOfDelivery/
+│   │   │    │   ├── CostOfDelivery.test.js
 │   │   │    │   └── CostOfDelivery.js
 │   │   │    ├── Form/
 │   │   │    │   └── Form.js
 │   │   │    ├── LocalStorage/
-│   │   │    │   └── LocalStorage.js
+│   │   │    │   ├── LocalStorage.js
+│   │   │    │   └── LocalStorage.test.js
 │   │   │    ├── Pattern/
 │   │   │    │   └── TransportFactory.js
 │   │   │    └── Transport/
@@ -66,7 +68,10 @@ What type of information it collect:
 │   ├── webpack.common.js
 │   ├── webpack.prod.js
 │   └── webpack.dev.js
+├── jest.config.js
+├── .eslintrc
 ├── babel.config.js
+├── .travis.yml
 ├── package-lock.json
 └── package.json
 ```
@@ -90,6 +95,18 @@ For build project:
 $ npm run build
 ```
 
+For test project:
+```sh
+$ npm run test
+```
+For lint project:
+```sh
+$ npm run lint
+```
+For fix errors which lint found in project:
+```sh
+$ npm run fix
+```
 ## Usage
 User can:
 - Add new ship
@@ -99,6 +116,9 @@ User can:
 ## Technologies
  - [Babel](https://babeljs.io/) - toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers
  - [Webpack](https://webpack.js.org/) - tool for bundle scritps
+ - [Travis](https://docs.travis-ci.com/user/customizing-the-build/) - tool for CI
+ - [Eslint](https://eslint.org/) - tool for identifying and reporting on patterns found in ECMAScript/JavaScript code
+ - [Jest] - tool for testing 
 
 ## Scripts description
 * `./src/index.html` - main html file;
@@ -106,8 +126,10 @@ User can:
 * `./src/js/index.js` - main file where are event listeners that respond to button clicks also this file is responsible for rendering  catalog page;
 * `./src/js/modules/Catalog/Catalog.js` - file where is the logic for rendering, adding to the catalog;
 * `./src/js/modules/CostOfDelivery/CostOfDelivery.js` - file for work with cost of delivery;
+* `./src/js/modules/CostOfDelivery/CostOfDelivery.test.js` - file for testing CostOfDelivery methods;
 * `./src/js/modules/Form/Form.js` - file for work with forms;
 * `./src/js/modules/LocalStorage/LocalStorage.js` - file for work with LocalStorage for set and get JSON file with information;
+* `./src/js/modules/LocalStorage/LocalStorage.test.js` - file for testing LocalStorage methods;
 * `./src/js/modules/Pattern/TransportFactory.js` - file for creating different transport class instances;
 * `./src/js/modules/Transport/Transport.js` - file that describes the structure of all vehicles;
 * `./src/js/modules/Transport/Ship.js` - file for working with an entity Ship;
@@ -115,7 +137,10 @@ User can:
 * `./webpack/webpack.common.js` - file for common webpack configuration;
 * `./webpack/webpack.dev.js` - file for development webpack configuration;
 * `./webpack/webpack.prod.js` - file for production webpack configuration;
+* `jest.config.js` - file for jest configuration;
+* `.eslintrc` - file for lint configuration;
 * `babel.config.js` - file for babel configuration;
+* `.travis.yml` - file for CI configuration;
 * `package-lock.json` - automatically generated for any operations where npm modifies either the node_modules tree, or package.json;
 * `package.json` - file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies.
 
