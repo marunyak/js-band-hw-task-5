@@ -69,6 +69,7 @@ What type of information it collect:
 │   ├── webpack.prod.js
 │   └── webpack.dev.js
 ├── jest.config.js
+├── .eslintrc
 ├── babel.config.js
 ├── package-lock.json
 └── package.json
@@ -92,9 +93,18 @@ For build project:
 ```sh
 $ npm run build
 ```
+
 For test project:
 ```sh
 $ npm run test
+```
+For lint project:
+```sh
+$ npm run lint
+```
+For fix errors which lint found in project:
+```sh
+$ npm run fix
 ```
 ## Usage
 User can:
@@ -105,7 +115,8 @@ User can:
 ## Technologies
  - [Babel](https://babeljs.io/) - toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers
  - [Webpack](https://webpack.js.org/) - tool for bundle scritps
-
+ - [Eslint](https://eslint.org/) - tool for identifying and reporting on patterns found in ECMAScript/JavaScript code
+ - [Jest] - tool for testing 
 ## Scripts description
 * `./src/index.html` - main html file;
 * `./src/css/main.css` - main css file with stylesheets;
@@ -124,6 +135,7 @@ User can:
 * `./webpack/webpack.dev.js` - file for development webpack configuration;
 * `./webpack/webpack.prod.js` - file for production webpack configuration;
 * `jest.config.js` - file for jest configuration;
+* `.eslintrc` - file for lint configuration;
 * `babel.config.js` - file for babel configuration;
 * `package-lock.json` - automatically generated for any operations where npm modifies either the node_modules tree, or package.json;
 * `package.json` - file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies.
