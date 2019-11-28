@@ -2,6 +2,7 @@ import '../css/main.css';
 import Catalog from './modules/Catalog/Catalog';
 import Form from './modules/Form/Form';
 
+
 const root = document.querySelector('#root');
 const ship = document.querySelector('.create-transport-ship');
 const truck = document.querySelector('.create-transport-truck');
