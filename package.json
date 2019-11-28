@@ -4,7 +4,7 @@
   "description": "Ciklum University: JS Band Internship. Homework task #5",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "jest src/js",
+    "test": "jest src/js --coverage",
     "dev": "webpack-dev-server --config webpack/webpack.dev.js",
     "build": "webpack --config webpack/webpack.prod.js",
     "deploy": "gh-pages -d dist"
