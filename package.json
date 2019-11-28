@@ -4,6 +4,7 @@
   "description": "Ciklum University: JS Band Internship. Homework task #5",
   "main": "webpack.config.js",
   "scripts": {
+    "test": "jest src/js --coverage;exit 0",
     "lint": "eslint --ext .js,.jsx src/;exit 0",
     "fix": "eslint src --fix",
     "dev": "webpack-dev-server --config webpack/webpack.dev.js",
@@ -25,6 +26,7 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
+    "babel-jest": "^24.9.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
@@ -38,6 +40,7 @@
     "eslint-plugin-react": "^7.16.0",
     "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
     "regenerator-runtime": "^0.13.3",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
