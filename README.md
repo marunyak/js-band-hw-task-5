@@ -71,6 +71,7 @@ What type of information it collect:
 ├── jest.config.js
 ├── .eslintrc
 ├── babel.config.js
+├── .travis.yml
 ├── package-lock.json
 └── package.json
 ```
@@ -115,8 +116,10 @@ User can:
 ## Technologies
  - [Babel](https://babeljs.io/) - toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers
  - [Webpack](https://webpack.js.org/) - tool for bundle scritps
+ - [Travis](https://docs.travis-ci.com/user/customizing-the-build/) - tool for CI
  - [Eslint](https://eslint.org/) - tool for identifying and reporting on patterns found in ECMAScript/JavaScript code
  - [Jest] - tool for testing 
+
 ## Scripts description
 * `./src/index.html` - main html file;
 * `./src/css/main.css` - main css file with stylesheets;
@@ -137,6 +140,7 @@ User can:
 * `jest.config.js` - file for jest configuration;
 * `.eslintrc` - file for lint configuration;
 * `babel.config.js` - file for babel configuration;
+* `.travis.yml` - file for CI configuration;
 * `package-lock.json` - automatically generated for any operations where npm modifies either the node_modules tree, or package.json;
 * `package.json` - file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies.
 
